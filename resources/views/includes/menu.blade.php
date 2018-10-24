@@ -1,15 +1,19 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebsiteName</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="{{route('index')}}">Home</a></li>
-            <li><a href="{{route('about')}}">About</a></li>
-            <li><a href="{{route('contact')}}">Contact</a></li>
-            <li><a href="{{route('thanks',['name' => 'IS601'])}}">Thanks</a></li>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{route('index')}}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('about')}}">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('contact')}}">contact</a>
+            </li>
         </ul>
     </div>
 </nav>
